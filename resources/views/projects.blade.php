@@ -202,7 +202,7 @@
                     <label for="status">Status</label>
                     <select class="form-control" id="status" name="status">
                         <option value="On Hold" {{ $project->status == 'On Hold' ? 'selected' : '' }}>On Hold</option>
-                        <option value="Cancelled" {{ $project->status == 'Canceled' ? 'selected' : '' }}>Cancelled</option>
+                        <option value="Cancelled" {{ $project->status == 'Cancelled' ? 'selected' : '' }}>Cancelled</option>
                         <option value="Success" {{ $project->status == 'Success' ? 'selected' : '' }}>Success</option>
                     </select>
                 </div>

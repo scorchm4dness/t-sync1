@@ -26,7 +26,7 @@ class ProjectController extends Controller
         $request->validate([
             'project_name' => 'required|string|max:255',
             'project_description' => 'required|string',
-            'status' => 'required|string|in:On Hold,Canceled,Success',
+            'status' => 'required|string|in:On Hold,Cancelled,Success',
             'project_progress' => 'numeric',
             'client_company' => 'required|string',
             'project_leader' => 'required|string',
@@ -59,7 +59,7 @@ class ProjectController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'project_name' => 'required|string|max:255',
-            'status' => 'required|string|in:On Hold,Canceled,Success',
+            'status' => 'required|string|in:On Hold,Cancelled,Success',
             'project_progress' => 'numeric',
         ]);
 
